@@ -26,6 +26,7 @@ html{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    position: fixed;
 }
 .right_nav-img_wrapper{
     width: 126px;
@@ -51,15 +52,22 @@ html{
     height: 100px;
 }
 .right_nav-menu{
+    font-size: 2em;
 }
-.container{
+.scroll-container{
     max-width: 1200px;
-    display: flex;
-    justify-content: center;
-
-}
-.scroll_down{
     position: absolute;
     bottom: 0;
-    padding: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scroll_down-text, .scroll_down-arrow{
+    color: black;
+    text-decoration: none;
+}
+.scroll_down-arrow{
+    font-size: 2em;
 }
