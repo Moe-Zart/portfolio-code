@@ -1,0 +1,65 @@
+/* header scroll down */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.header{
+    height: 100vh;
+}
+.left_nav{
+    width: 126px;
+    height:826px;
+    background-color:#2a2a2a;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+}
+.right_nav{
+    width: 100%;
+    height: 138px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.right_nav-img_wrapper{
+    width: 126px;
+    display: flex;
+    justify-content: center;
+}
+.right_nav-img{
+    width: 76px;
+    height: 37px;
+}
+.right_nav-right{
+    display: flex;
+    align-items: center;
+}
+.switch_outline{
+    width: 80px;
+    height: 30px;
+    border: 1px black solid;
+    border-radius: 24px;
+}
+.fa-bars:before, .fa-navicon:before{
+    width: 30px;
+    height: 100px;
+}
+.right_nav-menu{
+}
+.container{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+
+}
+.scroll_down{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
